@@ -1,0 +1,193 @@
+.search-form {
+  position: relative;
+  z-index: 10;
+
+  .input-group {
+    .search {
+      box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.1);
+    }
+
+    .input-group-addon i {
+      font-size: 1.2rem;
+      color: #a7a7a7;
+    }
+  }
+
+  .search {
+    .search-field {
+      outline: none;
+      box-shadow: none;
+      width: auto;
+      height: 55px;
+      padding-left: 15px;
+      border: 0 none;
+      outline: none;
+      flex-grow: 1;
+      border-radius: 0;
+      border-top-left-radius: 5px;
+      border-bottom-left-radius: 5px;
+    }
+
+    .input-group-addon {
+      padding: 7px 10px;
+      height: 55px;
+      font-size: 1.5rem;
+      background-color: #fff;
+      display: inline-block;
+      outline: none;
+      border: 0 none;
+      cursor: pointer;
+      border-top-right-radius: 5px;
+      border-bottom-right-radius: 5px;
+    }
+  }
+}
+
+.search-field-group {
+  .search-field {
+    background-color: #004a99;
+    border: 0 none;
+    color: #fff;
+    font-size: .9rem;
+    font-weight: 200;
+    padding: .55rem .75rem;
+    border-radius: .25rem 0 0 .25rem;
+    transition: all .5s ease;
+    width: 200px;
+    height: 40px;
+    box-shadow: none;
+
+    &:focus {
+      width: 280px;
+      outline: none;
+      box-shadow: none;
+    }
+
+    &::placeholder {
+      color: rgba(255, 255, 255, .5);
+    }
+  }
+
+  .input-group-append {
+    padding: 0;
+    border-bottom: 0;
+    height: 40px;
+  }
+}
+
+.form-inline {
+  margin: 0 50px;
+  position: relative;
+
+  .suggestions-container {
+    width: 420px;
+    margin-top: 0;
+    top: 44px;
+    left: 2px;
+
+    .suggestions {
+      border-radius: 3px;
+      padding-top: 0;
+      box-shadow: 0 10px 15px -20px #000;
+
+      ul li:first-child a {
+        border-top: 0 none;
+      }
+
+      ul li a.selected {
+        border-radius: 3px;
+      }
+    }
+  }
+
+  .search-field-group .input-group-append button.btn {
+    border-radius: 0 .25rem .25rem 0;
+  }
+}
+  
+.navbar.navbar-minimal .search-field-group .btn {
+  line-height: 1.6;
+}
+  
+.suggestions-container {
+  padding: 0 15px;
+  position: absolute;
+  width: 100%;
+  margin-top: -23px;
+  z-index: 5;
+
+  &.detailed {
+    position: relative;
+    margin-top: 25px;
+    margin-left: 0;
+    padding: 0;
+
+    .suggestions {
+      padding-top: 0;
+
+      ul li a {
+        h4.article-title {
+          font-size: 1.2rem;
+          font-weight: 600;
+          margin-bottom: 0;
+          color: #424242;
+        }
+
+        .meta {
+          font-size: 0.9rem;
+          color: #b0b0b0;
+        }
+
+        p {
+          color: #5b5b5b;
+        }
+
+        em {
+          background-color: #f6ffa5;
+          padding: 4px 2px;
+          font-style: normal;
+        }
+      }
+    }
+  }
+
+  .results-num {
+    color: #fff;
+    width: 100%;
+    text-align: right;
+  }
+
+  .suggestions {
+    background-color: #fff;
+    box-shadow: 0px 10px 25px -20px #000;
+    padding: 23px 0 0px;
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin-bottom: 0;
+
+      li {
+        a {
+          &:link, &:visited, &:hover {
+            padding: 14px 30px;
+            display: block;
+            border-top: 1px solid aliceblue;
+            color: #303030;
+            transition: background-color ease .3s;
+          }
+
+          &:hover {
+            text-decoration: none;
+          }
+
+          &.selected {
+            text-decoration: none;
+            background-color: rgba(204, 204, 204, .3);
+            color: #1f1f1f;
+          }
+        }
+      }
+    }
+  }
+}

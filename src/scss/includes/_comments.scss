@@ -1,0 +1,9 @@
+.comment-container {
+  padding: 10px;
+  background-color: transparent;
+  transition: background-color .5s ease-in-out;
+}
+  
+.comment-container.selected {
+  background-color: #fcfcd5;
+}

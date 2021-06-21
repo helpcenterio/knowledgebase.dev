@@ -1,0 +1,29 @@
+.share-buttons {
+  margin-top: 30px;
+  text-align: center;
+  font-size: 1.5rem;
+
+  a.share-button {
+    margin: 1px;
+    color: #6c757d !important;
+    transition: all .2s ease;
+
+    &:hover, &:active {
+      text-decoration: none;
+      color: #0B2A46 !important;
+    }
+
+    &:visited {
+      color: #6c757d;
+    }
+  }
+}
+
+.social a {
+  font-weight: 500;
+  color: #eceeef;  
+
+  &:hover {
+    color: #fff;
+  }
+}
