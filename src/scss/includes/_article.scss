@@ -1,0 +1,271 @@
+h1.article-heading {
+  margin-bottom: 1rem;
+  font-weight: 900;
+  font-size: 36px;
+}
+
+.article {
+  .blockquote, blockquote {
+    border-left: 5px solid #4ca8de;
+    color: rgb(155, 145, 145);
+    font-size: 1.2em;
+    margin: 0;
+    padding: 10px 0 10px 20px;
+    background-color: #e2f2ff;
+  }
+
+  .todo-block {
+    margin-left: 15px;
+
+    input[type="checkbox"] {
+      margin: 15px;
+    }
+  }
+}
+  
+.content {
+  font-size: 1rem;
+  line-height: 30.4px;
+  font-weight: 400;
+  color: #343434;
+  
+  ul {
+    margin-top: 15px;
+    
+    li {
+      margin: 5px 0;
+    }
+
+    ul {
+      margin-top: 0;
+    }
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  figure {
+    text-align: center;
+    background-color: #fbfbfb;
+    
+    figcaption {
+      font-size: 0.8rem;
+      text-align: center;
+    }
+  }
+
+  blockquote {
+    background: #f9f9f9;
+    border-left: 5px solid #ccc;
+    margin: 1.5rem 10px;
+    padding: 1.5rem 1.3rem;
+    quotes: "\201C" "\201D" "\2018" "\2019";
+    font-weight: lighter;
+    color: #3c3c3c;
+    font-size: 1.17rem;
+
+    figcaption {
+      font-size: .85rem;
+      text-align: right;
+    }
+
+    &::before {
+      color: #ccc;
+      font-family: "Font Awesome 5 Free";
+      content: '\F10D';
+      font-weight: 900;
+      font-size: 1.7rem;
+      line-height: 1em;
+      margin-right: 0.35em;
+      vertical-align: -0.1em;
+      margin-bottom: 0.35rem;
+    }
+
+    p {
+      margin-bottom: 0;
+      display: inline;
+    }
+  }
+
+  .callout {
+    font-size: 1rem;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    background-color: #ebf7ff;
+    padding: 15px;
+    margin-left: 10px;
+    border-left: 3px solid #22a5fc;
+    color: #004085;
+    position: relative;
+    
+    &.success {
+      background-color: #d4edda;
+      border-color: #155724;
+      color: #155724;
+    }
+
+    &.warning {
+      background-color: #fff3cd;
+      border-color: #856404;
+      color: #856404;
+    }
+
+    &.danger {
+      background-color: #f8d7da;
+      border-color: #721c24;
+      color: #721c24;
+    }
+
+    p {
+      margin-bottom: 0;
+    }
+  }
+
+  .todo-block {
+    margin-left: 30px;
+    
+    p {
+      margin-bottom: 0;
+
+      input[type=checkbox] {
+        margin: 10px;
+      }
+    }
+  }
+
+  .attachment-embed {
+    width: auto;
+    height: auto;
+    padding: 15px 15px;
+    border: 1px solid #ccc;
+    margin: 5px 0;
+
+    a.file-attachment {
+      text-decoration: none;
+      
+      &::before {
+        font-family: "Font Awesome 5 Free";
+        content: '\f0c6';
+        font-weight: bold;
+        color: #333;
+        font-size: 1.3rem;
+        margin-right: 1rem;
+      }
+    }
+
+    .file-size {
+      float: right;
+      color: #777;
+    }
+  }
+
+  .heading {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+  .toc-widget {
+    padding: 20px;
+    margin: 25px 15px;
+    border: 2px solid #efefef;
+
+    ul {
+      margin-bottom: 0;
+      margin-top: 10px;
+      
+      li {
+        margin: 0;
+        
+        ul {
+          margin-top: 0;
+        }
+      }
+    }
+  }
+  
+  span.highlight {
+    background-color: #fbf3c6;
+    padding: 2px 5px
+  }
+  
+  pre {
+    background-color: #eee;
+    border-radius: 5px;
+    padding: 10px 15px;
+    color: rgb(230, 8, 47);
+    word-break: break-all;
+    
+    code {
+      word-break: break-all;
+      max-width: 100%;
+    }
+  }
+
+  hr {
+    margin: 25px 0;
+    width: 100%;
+  }
+}
+
+.recommendations ul {
+  list-style: none;
+  padding-left: 15px;
+}
+
+.article-rating {
+  text-align: center;
+}
+
+.article-rating .btn-group .btn.btn-outline-info.selected {
+  color: #fff;
+  background-color: #17a2b8;
+  border-color: #17a2b8;
+}
+
+.article-content {
+  .embed iframe {
+    width: 100%;
+    border: 0 none;
+    outline: none;
+  }
+
+  ul {
+    padding-left: 40px;
+    margin-top: 15px;
+    font-weight: 400;
+    list-style: initial;
+
+    li {
+      margin: 0;
+    }
+  }
+
+  figure {
+    padding: 10px;
+    margin: 5px;
+    position: relative;
+    z-index: 2;
+
+    &.float-center {
+      float: none;
+      margin: 0 auto;
+    }
+
+    &.float-none {
+      float: none;
+    }
+
+    &.float-right {
+      float: right;
+      margin: 0 0 0 15px;
+      max-width: 80%;
+    }
+    
+    &.float-left {
+      float: left;
+      margin: 0 15px 0 0;
+      max-width: 80%;
+    }
+  }
+}

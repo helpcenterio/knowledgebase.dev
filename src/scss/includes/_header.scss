@@ -1,0 +1,49 @@
+.jumbotron {
+  margin-bottom: 0;
+  background: $primary center center no-repeat;
+  -webkit-background-size: contain;
+  background-size: cover;
+  position: relative;
+  padding: .5rem 1rem 3rem 1rem;
+
+  &.header-small {
+    height: auto;
+  }
+
+  .cover {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.1);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+
+  p:last-child {
+    margin-bottom: 0;
+  }
+
+  .container {
+    max-width: 50rem;
+    z-index: 3;
+    position: relative;
+    
+    h1 {
+      color: #fff;
+      margin-bottom: 1.5rem;
+      display: inline-block;
+    }
+
+    p.lead {
+      color: #eee;
+      font-size: 18px;
+    }
+  }
+
+  .jumbotron-heading {
+    font-weight: 300;
+  }
+
+  @import "search";
+}

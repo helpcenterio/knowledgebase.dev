@@ -1,0 +1,60 @@
+.category-box i {
+  margin: 15px 0 15px 15px;
+  font-size: 4.7rem;
+}
+  
+.category-listing {
+  hr {
+    margin: 10px 0 20px 0;
+  }
+  
+  .see-all {
+    text-align: right;
+  }
+
+  ul {
+    list-style: none;
+    font-size: .95rem;
+    padding-left: 0;
+    margin-left: 20px;
+    margin-top: 0;
+    
+    li {
+      margin: 5px 0;
+      border-bottom: 1px solid #eee;
+      padding: 5px 0;
+
+      a {
+        color: #1f1f1f;
+      }
+    }
+  }
+}
+
+ul.nav.categories-nav li {
+  &.open ul {
+    display: block;
+  }
+
+  ul {
+    margin: 0;
+    margin-top: 10px;
+    display: none;
+  }
+}
+
+.articles-listing li {
+
+  &:before {
+    content: '\f15c';
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    display: inline-block;
+    margin-right: 15px;
+    color: #cccccc;
+  }
+
+  &.subcategory-item:before {
+    content: '\f07b';
+  }
+}
