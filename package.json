@@ -4,9 +4,12 @@
   "description": "KnowledgeBase.dev - A free knowledge base/help center HTML template based on Bootstrap 4.",
   "main": "index.html",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview",
+    "dev": "npm run development",
+    "development": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "watch": "npm run development -- --watch",
+    "hot": "cross-env NODE_ENV=development node_modules/webpack-dev-server/bin/webpack-dev-server.js --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "prod": "npm run production",
+    "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
@@ -22,13 +25,16 @@
   "author": "HelpCenter.io",
   "license": "MIT",
   "dependencies": {
-    "@fortawesome/fontawesome-free": "^5.15.4",
-    "bootstrap": "^5.3.2",
+    "@fortawesome/fontawesome-free": "^5.15.1",
+    "bootstrap": "^4.5.3",
     "jquery": "^3.6.0",
-    "@popperjs/core": "^2.11.8"
+    "popper.js": "^1.16.1"
   },
   "devDependencies": {
-    "vite": "^5.0.0",
-    "sass": "^1.66.0"
+    "laravel-mix": "^5.0.9",
+    "resolve-url-loader": "^3.1.0",
+    "sass": "^1.30.0",
+    "sass-loader": "^8.0.2",
+    "vue-template-compiler": "^2.6.14"
   }
 }

@@ -1,12 +1,14 @@
-// Bootstrap 5 uses ES modules and doesn't require jQuery. Import JS if you need dropdowns/collapse etc.
-import 'bootstrap/dist/js/bootstrap.bundle.js';
+try {
+    window.$ = window.jQuery = require('jquery');
 
-document.addEventListener('DOMContentLoaded', () => {
-    document.querySelectorAll('.faq-item > a').forEach(el => {
-        el.addEventListener('click', (e) => {
-            e.preventDefault();
-            const parent = el.closest('.faq-item');
-            if (parent) parent.classList.toggle('is-open');
-        });
+    window.Popper = require('popper.js').default
+    require('bootstrap');
+} catch (e) {}
+
+$(document).ready(function() {
+    $('.faq-item > a').on('click', function(e) {
+        e.preventDefault();
+
+        $(this).parents('.faq-item').toggleClass('is-open');
     });
 });
