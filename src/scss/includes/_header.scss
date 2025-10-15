@@ -1,4 +1,4 @@
-.jumbotron {
+.jumbotron, .hero {
   margin-bottom: 0;
   background: $primary center center no-repeat;
   -webkit-background-size: contain;
@@ -43,6 +43,12 @@
 
   .jumbotron-heading {
     font-weight: 300;
+  }
+
+  // language dropdown styling inside hero
+  .dropdown .btn {
+    color: #fff;
+    border-color: rgba(255,255,255,0.35);
   }
 
   @import "search";
