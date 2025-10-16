@@ -1,7 +1,6 @@
 @import './includes/variables';
 
-// Import Bootstrap 5 SCSS (installed via npm)
-@import "../node_modules/bootstrap/scss/bootstrap";
+@import "~bootstrap/scss/bootstrap";
 
 @import './includes/_core';
 
