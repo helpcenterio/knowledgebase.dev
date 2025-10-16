@@ -7,9 +7,24 @@
       box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.1);
     }
 
-    .input-group-addon i {
+    .input-group-text i {
       font-size: 1.2rem;
       color: #a7a7a7;
+    }
+
+    /* Make the appended search button match the large search field */
+    &.search > .btn {
+      height: 55px;
+      padding: 7px 10px;
+      font-size: 1.5rem;
+      background-color: #fff;
+      border: 0 none;
+      cursor: pointer;
+      border-top-right-radius: 5px;
+      border-bottom-right-radius: 5px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
     }
   }
 
@@ -28,7 +43,7 @@
       border-bottom-left-radius: 5px;
     }
 
-    .input-group-addon {
+    .input-group-text {
       padding: 7px 10px;
       height: 55px;
       font-size: 1.5rem;
@@ -68,7 +83,8 @@
     }
   }
 
-  .input-group-append {
+  /* Bootstrap 5 uses input-group-text for appended text/buttons; target the button instead */
+  .input-group .btn {
     padding: 0;
     border-bottom: 0;
     height: 40px;
