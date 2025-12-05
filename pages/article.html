@@ -10,34 +10,42 @@
 
   <link rel="shortcut icon" href="/dist/images/favicon.ico">
 
-  <!-- Styles are handled by Vite; FontAwesome CSS is imported from JS -->
+  <script src="https://kit.fontawesome.com/1b5fdf4bb2.js" crossorigin="anonymous"></script>
+  <link href="../dist/css/main.css" rel="stylesheet">
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
 </head>
 
 <body>
 
   <section class="jumbotron jumbotron-fluid text-center header-small">
-    <div class="navbar navbar-dark navbar-expand-lg" role="navbar">
+    <div class="navbar navbar-dark navbar-static-top navbar-expand-lg" role="navbar">
       <a href="/" class="navbar-brand">
         KnowledgeBase.dev Help Center
       </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
         aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
 
       <div class="collapse navbar-collapse" id="navbarText">
         <ul class="nav navbar-nav">
-          <li class="nav-item header-link" style="padding-top:10px;">
+          <li class="nav-item header-link" style=padding-top:10px;>
             <a class="nav-link" href="https://knowledgebase.dev" target="_blank">Back to website</a>
           </li>
 
           <li class="nav-item">
             <div class="nav-link dropdown">
-              <button class="text-white btn btn-outline-light dropdown-toggle" type="button" id="dropdownMenuButton"
-                data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <button class="btn btn-outline-light dropdown-toggle" type="button" id="dropdownMenuButton"
+                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 English
               </button>
-              <div class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton">
+              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
                 <a class="dropdown-item" href="#fr">French</a>
                 <a class="dropdown-item" href="#bg">Bulgarian</a>
               </div>
@@ -55,10 +63,10 @@
           <div class="col-md-10">
             <form id="searchForm" action="/" class="search-form" method="GET">
               <div class="input-group search">
-                <input type="text" name="q" class="search-field form-control" aria-label="Search field"
+                <input type="text" name="q" class="search-field" aria-label="Search field"
                   placeholder="Enter your question here to get started" value="" aria-required="true" required
-                  autocomplete="off" />
-                <button class="btn" aria-label="Search" type="submit">
+                  autoComplete="off" />
+                <button class="input-group-addon" aria-label="Search">
                   <i class="fa fa-search">&nbsp;</i>
                 </button>
               </div>
@@ -74,7 +82,7 @@
       <div class="col-sm-12">
         <div class="row">
           <div class="col-md-12">
-            <nav aria-label="breadcrumb">
+            <nav aria-label="breadcrumb" role="navigation">
               <ol class="breadcrumb">
                 <li class="breadcrumb-item"><a href="/">Home</a></li>
                 <li class="breadcrumb-item active">Before you sign up</li>
@@ -83,7 +91,7 @@
           </div>
         </div>
         <div class="row justify-content-between">
-          <div class="col-md-3 text-start d-none d-md-inline-block">
+          <div class="col-md-3 text-left d-none d-md-inline-block">
             <h2>Categories</h2>
             <ul class="nav categories-nav nav-pills flex-column" role="navigation">
               <li class="nav-item open">
@@ -105,9 +113,9 @@
             </ul>
           </div>
 
-          <div class="col-12 text-start d-block d-md-none">
+          <div class="col-12 text-left d-block d-md-none">
             <h2 style="margin-bottom:30px;">
-              <a href="#categories-nav" style="line-height:.5rem;" data-bs-toggle="collapse" role="button"
+              <a href="#categories-nav" style="line-height:.5rem;" data-toggle="collapse" role="button"
                 aria-expanded="false" aria-controls="categories-nav" class="btn btn-outline-secondary">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" width="30" height="30" focusable="false"
                   role="img">
@@ -142,12 +150,12 @@
             <hr />
 
             <div class="row justify-content-between" id="article-meta">
-              <div class="author col-6 ps-5">
+              <div class="author col-6 pl-5">
                 <div class="author-avatar" style="background-image: url(../dist/images/author_avatar_male_1.jpg);">
                   &nbsp;</div>
                 <span class="author-name">John Smith</span>
               </div>
-              <small class="col-6 text-end pe-5">Last Updated: 15 days ago</small>
+              <small class="col-6 text-right pr-5">Last Updated: 15 days ago</small>
               <hr />
             </div>
 
@@ -163,14 +171,14 @@
               <p>So here's some content to show the different types of formatting supported in this template. Bascially
                 you can do anything that you could normally do with Bootstrap 4 and on top of that the knowledge base
                 template is providing some callouts and other block types.</p>
-              <h2>Second-level of headings</h2>
-              <h3>Third-level of headings</h3>
-              <h4>Fourth level of headings</h4>
-              <p>And some paragraph so we don't get too much into the headings.</p>
-              <blockquote>
-                Of course, you can also display quotes nicely formatted.
-                <figcaption>- Unknown Author</figcaption>
-              </blockquote>
+                <h2>Second-level of headings</h2>
+                <h3>Third-level of headings</h3>
+                <h4>Fourth level of headings</h4>
+                <p>And some paragraph so we don't get too much into the headings.</p>
+                <blockquote>
+                  Of course, you can also display quotes nicely formatted.
+                  <figcaption>- Unknown Author</figcaption>
+                </blockquote>
               <h2>Callouts</h2>
               <h3>It's like an alert in Bootstrap but with different name</h3>
               Here's one warning callout block:
@@ -181,7 +189,7 @@
               <div class="callout danger">Put great emhasis on messages with the danger block.</div>
               <div class="callout">And put information that should be stressed out but not that imprtant in simple
                 informational callout blocks.</div>
-
+              
               <h2>Images</h2>
               <figure>
                 <img src="../dist/images/example_image.jpg" alt="Example image of Surface tablet" />
@@ -192,10 +200,10 @@
               <pre><code>&lt;?php
   $testVar = 'This is some random code block';
   echo $testVar;</code></pre>
-              <p>
-                And you can also have any other type of embedded code. Say from GitHub like this one for example:
-                <script src="https://gist.github.com/jakerullman/7ba36fc90bfe1b2ec307.js"></script>
-              </p>
+                <p>
+                  And you can also have any other type of embedded code. Say from GitHub like this one for example:
+                  <script src="https://gist.github.com/jakerullman/7ba36fc90bfe1b2ec307.js"></script>
+                </p>
             </div>
 
             <hr style="clear:both;" />
@@ -251,7 +259,7 @@
             href="https://helpcenter.io"><img src="../dist/images/hcio_logo.svg" height="24"
               style="vertical-align:top;margin-right:3px;" />HelpCenter.io</a></small></strong></p>
         </div>
-        <div class="col-md-6 text-end">
+        <div class="col-md-6 text-right">
           <p>
             <a href="#">Back to top</a>
           </p>
@@ -260,9 +268,7 @@
     </div>
   </footer>
 
-  <script type="module">
-    import '/src/js/main.js';
-  </script>
+  <script src="../dist/js/main.js"></script>
 </body>
 
 </html>
