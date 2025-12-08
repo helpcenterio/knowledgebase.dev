@@ -57,6 +57,12 @@
               </ul>
             </li>
 
+            <li class="nav-item">
+              <a class="btn btn-outline-light" href="/pages/contacts.html">
+                Contact Us
+              </a>
+            </li>
+
           </ul>
         </div>
 
@@ -87,10 +93,53 @@
 
   <div class="container">
     <div class="row content section paddingt-2 white-background">
-      <div class="col-12 text-center">
-        <h1>Contacts</h1>
+      <div class="col-12">
+        <h1 class="text-center">Submit a request</h1>
         <hr />
-        <p class="lead">Coming soon.</p>
+        
+        <nav aria-label="breadcrumb" role="navigation" class="mt-4">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="/">Home</a></li>
+            <li class="breadcrumb-item active">Contact Us</li>
+          </ol>
+        </nav>
+
+        <div class="row justify-content-center mt-5">
+          <div class="col-md-8">
+            <form id="contactForm">
+              <div class="mb-4">
+                <label for="contactName" class="form-label">Name</label>
+                <input type="text" class="form-control form-control-lg" id="contactName" required>
+              </div>
+
+              <div class="mb-4">
+                <label for="contactEmail" class="form-label">Email</label>
+                <input type="email" class="form-control form-control-lg" id="contactEmail" required>
+                <small class="form-text text-muted">We'll never share your email with anyone else.</small>
+              </div>
+
+              <div class="mb-4">
+                <label for="requestType" class="form-label">Request Type</label>
+                <select class="form-select form-select-lg" id="requestType" required>
+                  <option value="1" selected>1. General</option>
+                  <option value="2">2. Technical Support</option>
+                  <option value="3">3. Billing</option>
+                  <option value="4">4. Feature Request</option>
+                  <option value="5">5. Other</option>
+                </select>
+              </div>
+
+              <div class="mb-4">
+                <label for="description" class="form-label">Description</label>
+                <textarea class="form-control form-control-lg" id="description" rows="6" required></textarea>
+              </div>
+
+              <div class="text-center">
+                <button type="submit" class="btn btn-primary btn-lg px-5">Submit</button>
+              </div>
+            </form>
+          </div>
+        </div>
       </div>
     </div>
   </div>
