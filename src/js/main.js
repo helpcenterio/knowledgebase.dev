@@ -1,14 +1,15 @@
-try {
-    window.$ = window.jQuery = require('jquery');
+// Import styles so Vite can process them
+import '../scss/main.scss';
+import 'bootstrap/dist/js/bootstrap.bundle.js';
+import '@fortawesome/fontawesome-free/css/all.min.css';
 
-    window.Popper = require('popper.js').default
-    require('bootstrap');
-} catch (e) {}
-
-$(document).ready(function() {
-    $('.faq-item > a').on('click', function(e) {
-        e.preventDefault();
-
-        $(this).parents('.faq-item').toggleClass('is-open');
+// FAQ toggle: vanilla JS (replaces jQuery usage)
+document.addEventListener('DOMContentLoaded', () => {
+    document.querySelectorAll('.faq-item > a').forEach(anchor => {
+        anchor.addEventListener('click', (e) => {
+            e.preventDefault();
+            const faqItem = anchor.closest('.faq-item');
+            if (faqItem) faqItem.classList.toggle('is-open');
+        });
     });
 });
