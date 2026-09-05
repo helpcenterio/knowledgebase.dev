@@ -1,6 +1,6 @@
 # Compass — the knowledge base launch kit
 
-A polished, customizable HTML knowledge base for product teams and agencies. Built by [HelpCenter.io](https://helpcenter.io/?utm_source=github&utm_medium=readme&utm_campaign=compass).
+A polished, customizable HTML knowledge base for product teams and agencies. Built by [HelpCenter.io](https://helpcenter.io/?utm_source=knowledgebase.dev&utm_medium=referral&utm_campaign=compass-launch-kit&utm_content=readme-brand).
 
 **[Customize & download](https://knowledgebase.dev/template/)** · **[Live demo](https://knowledgebase.dev/demo/)**
 
@@ -41,7 +41,7 @@ A blank support email shows a working troubleshooting link. Set a real address t
 
 This is a **public, English-language static site**, not a CMS. You maintain and publish its files. Search runs in the browser against bundled content; very large libraries may need a search service. There is no AI answer engine, access control, ticket inbox, analytics, email collection, or translation service. The translation CSV helps plan localization; it does not implement it. Redirect maps must be implemented on your host.
 
-Need nontechnical editing, hosting with SSL, multilingual content, search analytics, and AI answers grounded in your articles? [Try HelpCenter.io](https://helpcenter.io/app/signup?utm_source=github&utm_medium=readme&utm_campaign=compass). The kit's content and planning files are portable; it is not an importable HelpCenter.io theme or a Zendesk Guide theme.
+Need nontechnical editing, hosting with SSL, multilingual content, search analytics, and AI answers grounded in your articles? [Try HelpCenter.io](https://helpcenter.io/app/signup?utm_source=knowledgebase.dev&utm_medium=referral&utm_campaign=compass-launch-kit&utm_content=readme-trial). The kit's content and planning files are portable; it is not an importable HelpCenter.io theme or a Zendesk Guide theme.
 
 ## License
 
