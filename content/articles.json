@@ -1,0 +1,307 @@
+[
+  {
+    "slug": "create-your-workspace",
+    "category": "getting-started",
+    "title": "Create your first workspace",
+    "summary": "Set up a shared home for your team and your projects.",
+    "answer": "A workspace brings your team, projects, and settings together. Start with one workspace, then invite the people who need access.",
+    "updated": "2026-09-05",
+    "sections": [
+      {
+        "id": "section-1",
+        "title": "Before you start",
+        "html": "<p>Have a workspace name and your work email ready. If a teammate has already created a workspace, ask for an invitation to avoid creating a duplicate.</p>"
+      },
+      {
+        "id": "section-2",
+        "title": "Create the workspace",
+        "html": "<ol><li>Sign in to your account.</li><li>Choose <strong>Create workspace</strong> from the workspace menu.</li><li>Enter a name your team will recognize.</li><li>Review the settings, then select <strong>Create</strong>.</li></ol>"
+      },
+      {
+        "id": "section-3",
+        "title": "Check that it worked",
+        "html": "<p>Your new workspace appears in the workspace menu. Open it and check the name in the header. You can now invite a teammate or create your first project.</p>"
+      },
+      {
+        "id": "section-4",
+        "title": "If you cannot create a workspace",
+        "html": "<p>Check whether your account has permission to create workspaces. If the option is missing, ask your administrator before creating another account.</p>"
+      }
+    ]
+  },
+  {
+    "slug": "invite-your-team",
+    "category": "getting-started",
+    "title": "Invite your team",
+    "summary": "Bring the right people into your workspace.",
+    "answer": "Workspace administrators can invite teammates by email and choose the level of access each person needs.",
+    "updated": "2026-09-05",
+    "sections": [
+      {
+        "id": "section-1",
+        "title": "Send an invitation",
+        "html": "<ol><li>Open <strong>Settings → Members</strong>.</li><li>Select <strong>Invite members</strong>.</li><li>Enter the email address and choose a role.</li><li>Review the invitation and select <strong>Send</strong>.</li></ol>"
+      },
+      {
+        "id": "section-2",
+        "title": "Choose the right role",
+        "html": "<p>Give each teammate only the access they need. Use an administrator role for people who manage the workspace and a member role for everyday work. Check your actual role permissions before inviting external collaborators.</p>"
+      },
+      {
+        "id": "section-3",
+        "title": "An invitation has not arrived",
+        "html": "<p>Ask the recipient to check their spam folder and confirm the email address. Review the pending invitation before resending it.</p>"
+      }
+    ]
+  },
+  {
+    "slug": "reset-your-password",
+    "category": "your-account",
+    "title": "Reset your password",
+    "summary": "Get back into your account securely.",
+    "answer": "Use the password reset option on the sign-in screen to request a reset link. If your account uses company single sign-on, reset your password with your identity provider instead.",
+    "updated": "2026-09-05",
+    "sections": [
+      {
+        "id": "section-1",
+        "title": "Request a reset link",
+        "html": "<ol><li>Open the sign-in page.</li><li>Select <strong>Forgot password?</strong></li><li>Enter the email you use for your account.</li><li>Open the reset email and follow its instructions.</li><li>Choose a new, unique password.</li></ol>"
+      },
+      {
+        "id": "section-2",
+        "title": "The email has not arrived",
+        "html": "<p>Check spam and confirm you entered the right address. Request a new link if the previous one has expired. Never share the reset link with anyone.</p>"
+      },
+      {
+        "id": "section-3",
+        "title": "Still locked out",
+        "html": "<p>Contact your workspace administrator or the support team. Include your account email and the exact error message. Do not send your password.</p>"
+      }
+    ]
+  },
+  {
+    "slug": "update-your-profile",
+    "category": "your-account",
+    "title": "Update your profile",
+    "summary": "Keep your name and preferences up to date.",
+    "answer": "You can change your display name and profile preferences from your account settings. Some details may be managed by your company.",
+    "updated": "2026-09-05",
+    "sections": [
+      {
+        "id": "section-1",
+        "title": "Edit your details",
+        "html": "<ol><li>Open your profile menu.</li><li>Select <strong>Account settings</strong>.</li><li>Update your name and preferences.</li><li>Select <strong>Save changes</strong>.</li></ol>"
+      },
+      {
+        "id": "section-2",
+        "title": "Verify your changes",
+        "html": "<p>Reload the page and check your profile menu. If an email change requires verification, complete that step before using the new address to sign in.</p>"
+      },
+      {
+        "id": "section-3",
+        "title": "Managed accounts",
+        "html": "<p>If a field is locked, your company may manage it through single sign-on. Ask your administrator to update the source record.</p>"
+      }
+    ]
+  },
+  {
+    "slug": "find-your-invoices",
+    "category": "billing-plans",
+    "title": "Find and download invoices",
+    "summary": "Find the billing documents your finance team needs.",
+    "answer": "Workspace owners and billing administrators can find invoices in billing settings. If you do not see billing, ask the person who manages the subscription.",
+    "updated": "2026-09-05",
+    "sections": [
+      {
+        "id": "section-1",
+        "title": "Download an invoice",
+        "html": "<ol><li>Open <strong>Settings → Billing</strong>.</li><li>Find the invoice history.</li><li>Choose the invoice for the correct billing period.</li><li>Select <strong>Download</strong> and save a copy.</li></ol>"
+      },
+      {
+        "id": "section-2",
+        "title": "An invoice is missing",
+        "html": "<p>Check that you are in the correct workspace and using the billing account. If you still cannot find it, contact support with the billing period and workspace name.</p>"
+      },
+      {
+        "id": "section-3",
+        "title": "Billing details need changing",
+        "html": "<p>Update the billing information for future invoices in billing settings. Ask support about corrections to an already issued invoice; do not edit the invoice yourself.</p>"
+      }
+    ]
+  },
+  {
+    "slug": "change-your-plan",
+    "category": "billing-plans",
+    "title": "Change your subscription plan",
+    "summary": "Review a plan change before you confirm it.",
+    "answer": "Review features, limits, and the effective date in billing settings before changing your plan. Your product’s checkout should show the final cost and any proration.",
+    "updated": "2026-09-05",
+    "sections": [
+      {
+        "id": "section-1",
+        "title": "Review your options",
+        "html": "<ol><li>Open <strong>Settings → Billing</strong>.</li><li>Select <strong>Manage plan</strong>.</li><li>Compare the available features and limits.</li><li>Read the summary of charges and when the change takes effect.</li><li>Confirm only after checking the impact on your workspace.</li></ol>"
+      },
+      {
+        "id": "section-2",
+        "title": "Before a downgrade",
+        "html": "<p>Check whether your workspace uses features or exceeds limits on the new plan. Export anything you need to keep and review the product’s retention policy.</p>"
+      },
+      {
+        "id": "section-3",
+        "title": "Check the result",
+        "html": "<p>Return to billing settings to verify the plan and effective date. Save the confirmation for your records.</p>"
+      }
+    ]
+  },
+  {
+    "slug": "organize-your-projects",
+    "category": "your-workspace",
+    "title": "Organize your projects",
+    "summary": "Make the next thing easy to find.",
+    "answer": "Use consistent names and a small number of shared categories to help teammates find their work. Organize around the task people need to complete.",
+    "updated": "2026-09-05",
+    "sections": [
+      {
+        "id": "section-1",
+        "title": "Choose a naming pattern",
+        "html": "<p>Use short, descriptive names such as “Customer onboarding” or “September launch.” Avoid names that only make sense to the person who created them.</p>"
+      },
+      {
+        "id": "section-2",
+        "title": "Create a project",
+        "html": "<ol><li>Open your workspace.</li><li>Select <strong>New project</strong>.</li><li>Add a descriptive name and a short purpose.</li><li>Assign an owner and confirm access.</li></ol>"
+      },
+      {
+        "id": "section-3",
+        "title": "Keep it useful",
+        "html": "<p>Archive completed projects after checking their retention requirements. Revisit the structure when people regularly ask where something belongs.</p>"
+      }
+    ]
+  },
+  {
+    "slug": "manage-permissions",
+    "category": "your-workspace",
+    "title": "Manage team permissions",
+    "summary": "Give people the access they need.",
+    "answer": "Workspace administrators should review permissions when someone joins, changes role, or leaves. Give the smallest level of access that supports their work.",
+    "updated": "2026-09-05",
+    "sections": [
+      {
+        "id": "section-1",
+        "title": "Review a member",
+        "html": "<ol><li>Open <strong>Settings → Members</strong>.</li><li>Select the person you want to review.</li><li>Check their current role and access.</li><li>Choose the appropriate role and save.</li></ol>"
+      },
+      {
+        "id": "section-2",
+        "title": "Before removing access",
+        "html": "<p>Transfer ownership of active work and verify that another administrator can manage the workspace. Follow your organization’s offboarding policy.</p>"
+      },
+      {
+        "id": "section-3",
+        "title": "Confirm the change",
+        "html": "<p>Check the member list after saving. Where possible, use a test account to verify what each role can see.</p>"
+      }
+    ]
+  },
+  {
+    "slug": "connect-an-integration",
+    "category": "integrations",
+    "title": "Connect an integration",
+    "summary": "Bring your everyday tools together.",
+    "answer": "An administrator can connect supported tools from the integrations settings. Review the permissions requested by each integration before authorizing access.",
+    "updated": "2026-09-05",
+    "sections": [
+      {
+        "id": "section-1",
+        "title": "Connect the tool",
+        "html": "<ol><li>Open <strong>Settings → Integrations</strong>.</li><li>Choose a supported integration.</li><li>Select <strong>Connect</strong>.</li><li>Sign in to the external tool and review the requested permissions.</li><li>Authorize the connection and run a small test.</li></ol>"
+      },
+      {
+        "id": "section-2",
+        "title": "Verify the connection",
+        "html": "<p>Check that the integration reports a connected state, then confirm the expected action in the external tool. Start with test data that does not contain sensitive information.</p>"
+      },
+      {
+        "id": "section-3",
+        "title": "Disconnect a tool",
+        "html": "<p>Use the integration settings to disconnect access. Review the external tool’s authorized applications as well, and remove any credentials you no longer use.</p>"
+      }
+    ]
+  },
+  {
+    "slug": "integration-not-syncing",
+    "category": "integrations",
+    "title": "An integration is not syncing",
+    "summary": "Check the connection before reconnecting.",
+    "answer": "Check the connection status, permissions, and recent errors first. Reconnecting immediately can hide useful error details or create duplicate data.",
+    "updated": "2026-09-05",
+    "sections": [
+      {
+        "id": "section-1",
+        "title": "Check the basics",
+        "html": "<ol><li>Confirm the integration is enabled.</li><li>Check the account that authorized it still has access.</li><li>Review the last successful sync and any error messages.</li><li>Check the external provider’s service status.</li></ol>"
+      },
+      {
+        "id": "section-2",
+        "title": "Try a small test",
+        "html": "<p>Create one harmless test item and check whether it arrives. Record the time and the item identifier so support can trace it.</p>"
+      },
+      {
+        "id": "section-3",
+        "title": "Ask for help",
+        "html": "<p>Share the integration name, the time of the last successful sync, and a redacted error message. Never include API keys or authorization tokens.</p>"
+      }
+    ]
+  },
+  {
+    "slug": "cannot-sign-in",
+    "category": "troubleshooting",
+    "title": "I cannot sign in",
+    "summary": "Work through the most common sign-in issues.",
+    "answer": "Confirm your email address and sign-in method first. If your company uses single sign-on, use the company sign-in option rather than a password reset.",
+    "updated": "2026-09-05",
+    "sections": [
+      {
+        "id": "section-1",
+        "title": "Check your sign-in method",
+        "html": "<p>Use the method you originally registered with. A password, Google sign-in, and company SSO may follow different account recovery flows.</p>"
+      },
+      {
+        "id": "section-2",
+        "title": "Try these checks",
+        "html": "<ol><li>Check your email address for a typo.</li><li>Open a new private browser window.</li><li>If you use a password, request a reset.</li><li>If you use SSO, ask your administrator to confirm your access.</li></ol>"
+      },
+      {
+        "id": "section-3",
+        "title": "Contact support",
+        "html": "<p>Include the exact error message, your browser, and the time the problem happened. Do not share your password, reset link, or two-factor authentication codes.</p>"
+      }
+    ]
+  },
+  {
+    "slug": "report-a-problem",
+    "category": "troubleshooting",
+    "title": "Report a problem",
+    "summary": "Give support the details that help them help you.",
+    "answer": "A useful problem report explains what you tried, what you expected, and what happened instead. Include the smallest set of steps that reproduces the issue.",
+    "updated": "2026-09-05",
+    "sections": [
+      {
+        "id": "section-1",
+        "title": "Collect these details",
+        "html": "<ul><li>The page or feature affected.</li><li>The steps you took.</li><li>What you expected and what actually happened.</li><li>The exact error and when you saw it.</li><li>Your browser and device.</li></ul>"
+      },
+      {
+        "id": "section-2",
+        "title": "Protect sensitive information",
+        "html": "<p>Remove customer data, payment details, passwords, and API keys from screenshots and logs. Share only what support needs to understand the issue.</p>"
+      },
+      {
+        "id": "section-3",
+        "title": "Send your report",
+        "html": "<p>Use the contact route your team has published. Keep replies in the same conversation so the history stays together.</p>"
+      }
+    ]
+  }
+]

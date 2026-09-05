@@ -1,0 +1,2 @@
+old_url,new_url,action,owner,tested_status,final_url,notes
+https://old.example.com/help/123,https://help.example.com/articles/invite-your-team.html,301,,,,Example only - configure redirects on your hosting platform

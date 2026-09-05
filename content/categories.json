@@ -1,0 +1,38 @@
+[
+  {
+    "id": "getting-started",
+    "title": "Getting started",
+    "description": "Your first steps, made simple.",
+    "icon": "rocket"
+  },
+  {
+    "id": "your-account",
+    "title": "Your account",
+    "description": "Your details, security, and preferences.",
+    "icon": "person"
+  },
+  {
+    "id": "billing-plans",
+    "title": "Billing & plans",
+    "description": "Keep your subscription in good shape.",
+    "icon": "card"
+  },
+  {
+    "id": "your-workspace",
+    "title": "Your workspace",
+    "description": "A little organization goes a long way.",
+    "icon": "grid"
+  },
+  {
+    "id": "integrations",
+    "title": "Integrations",
+    "description": "Connect the tools you already love.",
+    "icon": "plug"
+  },
+  {
+    "id": "troubleshooting",
+    "title": "Troubleshooting",
+    "description": "Get unstuck and get back to it.",
+    "icon": "life"
+  }
+]

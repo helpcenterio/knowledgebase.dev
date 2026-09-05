@@ -1,3 +1,5 @@
-node_modules
-node_modules/*
-.vscode
+node_modules/
+dist/
+.env*
+.neon
+.DS_Store

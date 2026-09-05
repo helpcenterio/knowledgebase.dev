@@ -1,0 +1,2 @@
+source_article_id,source_title,source_verified_at,locale,translation_owner,translated_at,reviewed_at,status,notes
+example-001,Invite a teammate,,fr,,,,needs_translation,Update this row whenever the source article changes
