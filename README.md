@@ -32,8 +32,9 @@ Open `dist/index.html`. Publish the **contents of `dist/`** to your static host.
 1. Edit `config.json`: set `brand`, `accent` (`pine`, `ocean`, `violet`), `mode` (`light`, `dark`), `siteUrl`, `websiteUrl`, and `supportEmail`.
 2. Replace the fictional product instructions in `content/articles.json` with verified content. Section HTML is trusted author content; do not load untrusted submissions into it.
 3. Edit categories in `content/categories.json`. Match each article's category to a category ID.
-4. Run `npm run build` again. Both the pages and search index regenerate together.
-5. Work through `toolkit/launch-checklist.md` before publishing.
+4. Optional: remove the footer credit. The "Made with Compass · by HelpCenter.io" line is yours to keep or delete. There is no setting for it: delete its `<span>` inside `<footer class="site-footer">` in `lib/template.mjs`.
+5. Run `npm run build` again. Both the pages and search index regenerate together.
+6. Work through `toolkit/launch-checklist.md` before publishing.
 
 A blank support email shows a working troubleshooting link. Set a real address to enable “Contact support.” A blank site URL omits the sitemap and canonical links, so example domains cannot accidentally become your canonical URLs. Set the deployed URL and rebuild for production. The downloaded site uses relative `.html` links, including under subfolders. Dark-mode preference is saved locally in the reader's browser when storage is available.
 
