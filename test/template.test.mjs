@@ -1,6 +1,12 @@
 import test from "node:test";
 import assert from "node:assert/strict";
-import { mkdirSync, mkdtempSync, rmSync, writeFileSync } from "node:fs";
+import {
+  mkdirSync,
+  mkdtempSync,
+  rmSync,
+  symlinkSync,
+  writeFileSync,
+} from "node:fs";
 import { tmpdir } from "node:os";
 import {
   articles,
@@ -12,18 +18,26 @@ import {
 import path from "node:path";
 const pages = (files) =>
   Object.keys(files).filter((x) => x.endsWith(".html")).length;
+const decode = (segment) => {
+  try {
+    return decodeURIComponent(segment);
+  } catch {
+    return segment;
+  }
+};
 const assertLinksResolve = (files) => {
   for (const [name, html] of Object.entries(files)) {
     if (!name.endsWith(".html")) continue;
     for (const match of html.matchAll(/(?:href|src)="([^"#]+)"/g)) {
       const href = match[1];
       if (/^(https?:|mailto:)/.test(href)) continue;
-      const target = path.posix.normalize(
-        path.posix.join(
-          path.posix.dirname(name),
-          decodeURI(href.split("#")[0]),
-        ),
-      );
+      const target = path.posix
+        .normalize(
+          path.posix.join(path.posix.dirname(name), href.split(/[?#]/)[0]),
+        )
+        .split("/")
+        .map(decode)
+        .join("/");
       assert.ok(files[target], `${name} links to missing ${target}`);
     }
   }
@@ -83,7 +97,15 @@ test("ships images from content/images that articles reference", (t) => {
   const png = Buffer.from([0x89, 0x50, 0x4e, 0x47, 0x0d, 0x0a, 0x1a, 0x0a]);
   mkdirSync(path.join(dir, "images", "setup"), { recursive: true });
   writeFileSync(path.join(dir, "images", "setup", "install screen.png"), png);
+  writeFileSync(path.join(dir, "images", "diagram#1.png"), png);
+  writeFileSync(path.join(dir, "images", "__proto__"), png);
   writeFileSync(path.join(dir, "images", ".DS_Store"), "");
+  // A folder link back to images/ must not loop or be copied.
+  symlinkSync(
+    path.join(dir, "images"),
+    path.join(dir, "images", "setup", "loop"),
+    "junction",
+  );
   writeFileSync(
     path.join(dir, "categories.json"),
     JSON.stringify(own.categories),
@@ -96,7 +118,7 @@ test("ships images from content/images that articles reference", (t) => {
           {
             id: "section-1",
             title: "Steps",
-            html: '<p><img src="../images/setup/install%20screen.png" alt="The install screen"></p>',
+            html: '<p><img src="../images/setup/install%20screen.png" alt="The install screen"><img src="../images/diagram%231.png" alt="Diagram"><img src="../images/__proto__" alt="Odd name"></p>',
           },
         ],
       }),
@@ -106,7 +128,18 @@ test("ships images from content/images that articles reference", (t) => {
   const content = loadContent(dir),
     files = buildFiles({}, content);
   assert.deepEqual(files["images/setup/install screen.png"], png);
-  assert.equal(files["images/.DS_Store"], undefined);
+  assert.deepEqual(files["images/diagram#1.png"], png);
+  assert.deepEqual(files["images/__proto__"], png);
+  assert.deepEqual(
+    Object.keys(files)
+      .filter((f) => f.startsWith("images/"))
+      .sort(),
+    [
+      "images/__proto__",
+      "images/diagram#1.png",
+      "images/setup/install screen.png",
+    ],
+  );
   assertLinksResolve(files);
   assert.throws(
     () => assertLinksResolve(buildFiles({}, { ...content, images: {} })),
