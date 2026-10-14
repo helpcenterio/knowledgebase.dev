@@ -30,12 +30,14 @@ Open `dist/index.html`. Publish the **contents of `dist/`** to your static host.
 ## Make it yours
 
 1. Edit `config.json`: set `brand`, `accent` (`pine`, `ocean`, `violet`), `mode` (`light`, `dark`), `siteUrl`, `websiteUrl`, and `supportEmail`.
-2. Replace the fictional product instructions in `content/articles.json` with verified content. Section HTML is trusted author content; do not load untrusted submissions into it.
+2. Replace the fictional product instructions in `content/articles.json` with verified content. Section HTML is trusted author content; do not load untrusted submissions into it. Put screenshots and other files in `content/images/` and reference them from section HTML as `../images/your-file.png`. Add `"popular": true` to the articles you want linked under the search box.
 3. Edit categories in `content/categories.json`. Match each article's category to a category ID.
 4. Run `npm run build` again. Both the pages and search index regenerate together.
 5. Work through `toolkit/launch-checklist.md` before publishing.
 
-A blank support email shows a working troubleshooting link. Set a real address to enable “Contact support.” A blank site URL omits the sitemap and canonical links, so example domains cannot accidentally become your canonical URLs. Set the deployed URL and rebuild for production. The downloaded site uses relative `.html` links, including under subfolders. Dark-mode preference is saved locally in the reader's browser when storage is available.
+The home page follows your articles. “Popular” links use each flagged article's title, or a short label if you give one (`"popular": "Find an invoice"`); with no flags, the first two articles are used. “A good place to start” shows your first article, then the popular ones, three in total. The sample articles carry `"sample": true`, which adds a “Sample article” label and a reminder to replace them; leave it out of your own articles. Everything in `content/images/`, including subfolders, is copied to `images/` in `dist/` (hidden files and symbolic links are skipped). `npm test` checks your own content: every page, link, and image must resolve, and a missing category or duplicate slug fails with a message that names it.
+
+A blank support email shows a working troubleshooting link (or a search link, if you have no `troubleshooting` category). Set a real address to enable “Contact support.” A blank site URL omits the sitemap and canonical links, so example domains cannot accidentally become your canonical URLs. Set the deployed URL and rebuild for production. The downloaded site uses relative `.html` links, including under subfolders. Dark-mode preference is saved locally in the reader's browser when storage is available.
 
 ## What this template does (and doesn't do)
 

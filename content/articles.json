@@ -6,6 +6,7 @@
     "summary": "Set up a shared home for your team and your projects.",
     "answer": "A workspace brings your team, projects, and settings together. Start with one workspace, then invite the people who need access.",
     "updated": "2026-09-05",
+    "sample": true,
     "sections": [
       {
         "id": "section-1",
@@ -36,6 +37,8 @@
     "summary": "Bring the right people into your workspace.",
     "answer": "Workspace administrators can invite teammates by email and choose the level of access each person needs.",
     "updated": "2026-09-05",
+    "popular": true,
+    "sample": true,
     "sections": [
       {
         "id": "section-1",
@@ -61,6 +64,7 @@
     "summary": "Get back into your account securely.",
     "answer": "Use the password reset option on the sign-in screen to request a reset link. If your account uses company single sign-on, reset your password with your identity provider instead.",
     "updated": "2026-09-05",
+    "sample": true,
     "sections": [
       {
         "id": "section-1",
@@ -86,6 +90,7 @@
     "summary": "Keep your name and preferences up to date.",
     "answer": "You can change your display name and profile preferences from your account settings. Some details may be managed by your company.",
     "updated": "2026-09-05",
+    "sample": true,
     "sections": [
       {
         "id": "section-1",
@@ -111,6 +116,8 @@
     "summary": "Find the billing documents your finance team needs.",
     "answer": "Workspace owners and billing administrators can find invoices in billing settings. If you do not see billing, ask the person who manages the subscription.",
     "updated": "2026-09-05",
+    "popular": "Find an invoice",
+    "sample": true,
     "sections": [
       {
         "id": "section-1",
@@ -136,6 +143,7 @@
     "summary": "Review a plan change before you confirm it.",
     "answer": "Review features, limits, and the effective date in billing settings before changing your plan. Your product’s checkout should show the final cost and any proration.",
     "updated": "2026-09-05",
+    "sample": true,
     "sections": [
       {
         "id": "section-1",
@@ -161,6 +169,7 @@
     "summary": "Make the next thing easy to find.",
     "answer": "Use consistent names and a small number of shared categories to help teammates find their work. Organize around the task people need to complete.",
     "updated": "2026-09-05",
+    "sample": true,
     "sections": [
       {
         "id": "section-1",
@@ -186,6 +195,7 @@
     "summary": "Give people the access they need.",
     "answer": "Workspace administrators should review permissions when someone joins, changes role, or leaves. Give the smallest level of access that supports their work.",
     "updated": "2026-09-05",
+    "sample": true,
     "sections": [
       {
         "id": "section-1",
@@ -211,6 +221,7 @@
     "summary": "Bring your everyday tools together.",
     "answer": "An administrator can connect supported tools from the integrations settings. Review the permissions requested by each integration before authorizing access.",
     "updated": "2026-09-05",
+    "sample": true,
     "sections": [
       {
         "id": "section-1",
@@ -236,6 +247,7 @@
     "summary": "Check the connection before reconnecting.",
     "answer": "Check the connection status, permissions, and recent errors first. Reconnecting immediately can hide useful error details or create duplicate data.",
     "updated": "2026-09-05",
+    "sample": true,
     "sections": [
       {
         "id": "section-1",
@@ -261,6 +273,7 @@
     "summary": "Work through the most common sign-in issues.",
     "answer": "Confirm your email address and sign-in method first. If your company uses single sign-on, use the company sign-in option rather than a password reset.",
     "updated": "2026-09-05",
+    "sample": true,
     "sections": [
       {
         "id": "section-1",
@@ -286,6 +299,7 @@
     "summary": "Give support the details that help them help you.",
     "answer": "A useful problem report explains what you tried, what you expected, and what happened instead. Include the smallest set of steps that reproduces the issue.",
     "updated": "2026-09-05",
+    "sample": true,
     "sections": [
       {
         "id": "section-1",
