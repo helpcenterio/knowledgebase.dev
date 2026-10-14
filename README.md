@@ -32,8 +32,9 @@ Open `dist/index.html`. Publish the **contents of `dist/`** to your static host.
 1. Edit `config.json`: set `brand`, `accent` (`pine`, `ocean`, `violet`), `mode` (`light`, `dark`), `siteUrl`, `websiteUrl`, and `supportEmail`.
 2. Replace the fictional product instructions in `content/articles.json` with verified content. Section HTML is trusted author content; do not load untrusted submissions into it. Put screenshots and other files in `content/images/` and reference them from section HTML as `../images/your-file.png`. Add `"popular": true` to the articles you want linked under the search box.
 3. Edit categories in `content/categories.json`. Match each article's category to a category ID.
-4. Run `npm run build` again. Both the pages and search index regenerate together.
-5. Work through `toolkit/launch-checklist.md` before publishing.
+4. Optional: remove the footer credit. The "Made with Compass · by HelpCenter.io" line is yours to keep or delete. There is no setting for it: delete its `<span>` inside `<footer class="site-footer">` in `lib/template.mjs`.
+5. Run `npm run build` again. Both the pages and search index regenerate together.
+6. Work through `toolkit/launch-checklist.md` before publishing.
 
 The home page follows your articles. “Popular” links use each flagged article's title, or a short label if you give one (`"popular": "Find an invoice"`); with no flags, the first two articles are used. “A good place to start” shows your first article, then the popular ones, three in total. The sample articles carry `"sample": true`, which adds a “Sample article” label and a reminder to replace them; leave it out of your own articles. Everything in `content/images/`, including subfolders, is copied to `images/` in `dist/` (hidden files and symbolic links are skipped). `npm test` checks your own content: every page, link, and image must resolve, and a missing category or duplicate slug fails with a message that names it.
 
